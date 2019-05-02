@@ -1,0 +1,10 @@
+<div class="contents row">
+  <%= form_tag("/tweets/#{@tweet.id}", method: :patch) do %>
+   <h3>
+      編集する
+  </h3>
+   <input placeholder="image Url" type="text" name="image" value= "<%= @tweet.image %>">
+   <textarea placeholeder="text" name="text" cols="30" rows="10"><%= @tweet.text %></textarea>
+   <input type="submit" value="SENT">
+  <% end %>
+</div>
